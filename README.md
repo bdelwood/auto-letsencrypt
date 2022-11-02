@@ -1,10 +1,8 @@
-### gordonchan/auto-letsencrypt
-
-[![](https://images.microbadger.com/badges/image/gordonchan/auto-letsencrypt.svg)](http://microbadger.com/images/gordonchan/auto-letsencrypt "Get your own image badge on microbadger.com")
+### auto-letsencrypt
 
 A Docker image to automatically request and renew SSL/TLS certificates from [Let's Encrypt](https://letsencrypt.org/) using [certbot](https://certbot.eff.org/about/) and the [Webroot](https://certbot.eff.org/docs/using.html#webroot) method for domain validation. This image is also capable of sending a `HUP` signal to a Docker container running a web server in order to use the freshly minted certificates.
 
-Based on the [quay.io/letsencrypt/letsencrypt](https://quay.io/repository/letsencrypt/letsencrypt) base image and inspired by [kvaps/letsencrypt-webroot](https://github.com/kvaps/docker-letsencrypt-webroot).
+Based on the [certbot/certbot](https://hub.docker.com/r/certbot/certbot/) base image and forked from [gchan/auto-letsencrypt](https://github.com/gchan/auto-letsencrypt).
 
 For ease of auditability, this version is simplified with configuration removed or generalized.
 
@@ -130,5 +128,4 @@ services:
 
 Copyright (c) 2016 Gordon Chan. Released under the MIT License. It is free software, and may be redistributed under the terms specified in the [LICENSE](https://github.com/gchan/dockerfiles/blob/master/LICENSE.txt) file.
 
-[![Analytics](https://ga-beacon.appspot.com/UA-70790190-2/dockerfiles/auto-letsencrypt/README.md?flat)](https://github.com/igrigorik/ga-beacon)
 
